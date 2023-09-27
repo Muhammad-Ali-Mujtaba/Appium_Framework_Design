@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<listeners>
+		<listener class-name="testing_journey.utils.Listeners"></listener>
+	</listeners>
+	
+  <test thread-count="5" name="Fill Form">
+    <classes>
+      <class name="testing_journey.Ecommerce_Fill_Form"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Ecommerce End to End">
+    <classes>
+      <class name="testing_journey.Ecommerce_Cart_WebView"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
+
+
